@@ -1,8 +1,17 @@
 @import '~antd/dist/antd.css';
+
 .App {
   text-align: center;
 }
 
+.site-card-wrapper {
+  background: rgb(84, 214, 171) ;
+  padding: 30px;
+}
+
+
+
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,4 +45,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
