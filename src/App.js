@@ -8,64 +8,68 @@ import {Layout, Menu, Breadcrumb, Row, Col, Card } from 'antd';
 
 function App () {
 
-
-// return (
-//   <div className="site-card-wrapper">
-  
-//   </div>
-//   );
-
 const { Header, Content, Footer } = Layout;
+const { Meta } = Card;
 const cardData = [
-  {
-    country : "Germany",
-    city : "Berlin",
-  },
-  {
-    country : "England",
-    city : "London",
+{
+  
+  destination : "Berlin, Germany",
+  img : "https://ssl.tzoo-img.com/images/tzoo.hd.14862.7444.937862.Berlin.jpg?width=392&spr=3",
+  note : "Visit the Reichstag building. Admire the Berliner Dom. Time travel through East Side Gallery's paintings.",
 },
-  {
-    country : "Japan",
-    city : "Tokyo",
-  }
+{
+  destination : "Prague, Czech",
+  img : "https://www.somagnews.com/wp-content/uploads/2019/09/s3-e1569185090745.jpg",
+  note : "Explore the Old Town Square. Watch the Astronomical Clock Strike an Hour. Stroll across the Charles Bridge.",
+},
+{
+  destination : "Tokyo, Japan",
+  img : "https://www.globeguide.ca/wp-content/uploads/2013/10/Japan-Tokyo-asakusa.jpg",
+  note : "Snap up anime films and collectables at Akihabara. Take in old-fashioned Yanaka Ginza Shitamachi.",
+}
 ]
 
 return (
 <Layout className="layout">
-  <Header>
-    <div className="logo" />
-    <Menu
-      theme="dark"
-      mode="horizontal"
-      defaultSelectedKeys={['2']}
-      style={{ lineHeight: '64px' }}
-    >
-      <Menu.Item key="1">Home</Menu.Item>
-      <Menu.Item key="2">About</Menu.Item>
-      <Menu.Item key="3">Contact</Menu.Item>
-    </Menu>
-  </Header>
-  <Content style={{ padding: '0 50px' }}>
-    <Breadcrumb style={{ margin: '16px 0' }}>
-      <Breadcrumb.Item>Home</Breadcrumb.Item>
-      <Breadcrumb.Item>Country</Breadcrumb.Item>
-      <Breadcrumb.Item>Bucket list</Breadcrumb.Item>
-    </Breadcrumb>
-    <div className="site-layout-content">
-      <Row gutter={16}>
-    {cardData.map (data=>
-      <Col span={8}>
-      <Card bordered={true}>
-          <h2>{data.country}</h2>
-          <p>{data.city}</p>
-      </Card>
-      </Col>
-      )}
-  </Row>
-    </div>
-  </Content>
-  <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+<Header>
+  <div className="logo" />
+  <Menu
+    theme="dark"
+    mode="horizontal"
+    defaultSelectedKeys={['2']}
+    style={{ lineHeight: '64px' }}
+  >
+    <Menu.Item key="1">Home</Menu.Item>
+    <Menu.Item key="2">About</Menu.Item>
+    <Menu.Item key="3">Contact</Menu.Item>
+  </Menu>
+</Header>
+<Content style={{ padding: '0 50px' }}>
+  <Breadcrumb style={{ margin: '16px 0' }}>
+    <Breadcrumb.Item>Home</Breadcrumb.Item>
+    <Breadcrumb.Item>Country</Breadcrumb.Item>
+    <Breadcrumb.Item>Bucket list</Breadcrumb.Item>
+  </Breadcrumb>
+  <div className="site-layout-content">
+    <Row gutter={25}>
+  {cardData.map (data=>
+    <Col>
+    <Card bordered={false}>
+    <Card
+  hoverable
+  style={{ width: 240, height : 280 }}
+  cover={<img alt="example" src= {data.img} height="120" width="200" />}
+>
+  <Meta title = {data.destination} description = {data.note} />
+</Card>
+        
+    </Card>
+    </Col>
+    )}
+</Row>
+  </div>
+</Content>
+<Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
 </Layout>
 );
 
