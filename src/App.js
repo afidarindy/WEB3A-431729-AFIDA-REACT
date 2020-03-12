@@ -19,6 +19,7 @@ const App = () => {
       <Cities city="Seoul" country="South Korea" />
       <Cities city="London" country="England" />
       <Cities city="Tokyo" country="Japan" />
+      <Cities city="Turkiye" country="Istanbul" />
   </div>
   )
 }
