@@ -1,9 +1,9 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
-
 import './style.css';
 import {Layout, Menu, Breadcrumb, Row, Col, Card } from 'antd';
+import BucketList from './container/BucketList/bucketlist';
 
 
 function App () {
@@ -34,46 +34,57 @@ const cardData = [
 ]
 
 return (
+  
 <Layout className="layout">
-<Header>
-  <div className="logo" />
-  <Menu
-    theme="dark"
-    mode="horizontal"
-    defaultSelectedKeys={['1']}
-    style={{ lineHeight: '50px' }}
+  <Header>
+    <div className="logo" />
+    <Menu
+      theme="dark"
+      mode="horizontal"
+      defaultSelectedKeys={['1']}
+      style={{ lineHeight: '50px' }}
   >
-    <Menu.Item key="1">Home</Menu.Item>
-    <Menu.Item key="2">About</Menu.Item>
-    <Menu.Item key="3">Contact</Menu.Item>
-  </Menu>
-</Header>
-<Content style={{ padding: '0 50px' }}>
-  <Breadcrumb style={{ margin: '16px 0' }}>
-    <Breadcrumb.Item>Home</Breadcrumb.Item>
-    <Breadcrumb.Item>Popular</Breadcrumb.Item>
-    <Breadcrumb.Item>Rindy's Bucket List</Breadcrumb.Item>
-  </Breadcrumb>
-  <div className="site-layout-content">
-    <Row gutter={32}>
-  {cardData.map (data=>
-    <Col>
-    <Card bordered={false}>
-    <Card
-  hoverable
-  style={{ width: 240, height : 280 }}
-  cover={<img alt="example" src= {data.img} height="120" width="200" />}
->
-  <Meta title = {data.destination} description = {data.note} />
-</Card>
-        
-    </Card>
-    </Col>
-    )}
-</Row>
-  </div>
-</Content>
-<Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+      <Menu.Item key="1">Home</Menu.Item>
+      <Menu.Item key="2">About</Menu.Item>
+      <Menu.Item key="3">Contact</Menu.Item>
+    </Menu>
+  </Header>
+
+  <Content style={{ padding: '0 50px' }}>
+
+    <Breadcrumb style={{ margin: '16px 0' }}>
+      <Breadcrumb.Item>Home</Breadcrumb.Item>
+      <Breadcrumb.Item>Popular</Breadcrumb.Item>
+      <Breadcrumb.Item>Rindy's Bucket List</Breadcrumb.Item>
+    </Breadcrumb>
+
+    <div className="site-layout-content">
+      <Row gutter={32}>
+        {cardData.map (data=>
+          <Col>
+            <Card bordered={false}>
+            <Card
+              hoverable
+              style={{ width: 240, height : 280 }}
+              cover={<img alt="example" src= {data.img} height="120" width="200" />}
+  >
+              <Meta title = {data.destination} description = {data.note} />
+            </Card> 
+            </Card>
+          </Col>
+          )
+        }
+      </Row>
+    </div>
+
+    <BucketList />
+    
+    
+    
+  </Content>
+
+  <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+
 </Layout>
 );
 
