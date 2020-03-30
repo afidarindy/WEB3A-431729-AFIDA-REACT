@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/WEB3A-431729-AFIDA-REACT/static/css/main.de750538.chunk.css",
+    "main.js": "/WEB3A-431729-AFIDA-REACT/static/js/main.5795a828.chunk.js",
+    "main.js.map": "/WEB3A-431729-AFIDA-REACT/static/js/main.5795a828.chunk.js.map",
+    "runtime-main.js": "/WEB3A-431729-AFIDA-REACT/static/js/runtime-main.9a416f55.js",
+    "runtime-main.js.map": "/WEB3A-431729-AFIDA-REACT/static/js/runtime-main.9a416f55.js.map",
+    "static/css/2.1bd2ab2f.chunk.css": "/WEB3A-431729-AFIDA-REACT/static/css/2.1bd2ab2f.chunk.css",
+    "static/js/2.fc10f3c5.chunk.js": "/WEB3A-431729-AFIDA-REACT/static/js/2.fc10f3c5.chunk.js",
+    "static/js/2.fc10f3c5.chunk.js.map": "/WEB3A-431729-AFIDA-REACT/static/js/2.fc10f3c5.chunk.js.map",
+    "index.html": "/WEB3A-431729-AFIDA-REACT/index.html",
+    "precache-manifest.8f8c8617e19be1c4082a26a565556a97.js": "/WEB3A-431729-AFIDA-REACT/precache-manifest.8f8c8617e19be1c4082a26a565556a97.js",
+    "service-worker.js": "/WEB3A-431729-AFIDA-REACT/service-worker.js",
+    "static/css/2.1bd2ab2f.chunk.css.map": "/WEB3A-431729-AFIDA-REACT/static/css/2.1bd2ab2f.chunk.css.map",
+    "static/css/main.de750538.chunk.css.map": "/WEB3A-431729-AFIDA-REACT/static/css/main.de750538.chunk.css.map",
+    "static/js/2.fc10f3c5.chunk.js.LICENSE.txt": "/WEB3A-431729-AFIDA-REACT/static/js/2.fc10f3c5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a416f55.js",
+    "static/css/2.1bd2ab2f.chunk.css",
+    "static/js/2.fc10f3c5.chunk.js",
+    "static/css/main.de750538.chunk.css",
+    "static/js/main.5795a828.chunk.js"
+  ]
+}
