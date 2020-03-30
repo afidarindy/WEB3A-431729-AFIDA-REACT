@@ -15,7 +15,7 @@ class LandingComponent extends Component{
                         <br/><br/>
                         <div>
                         <img
-                        src="https://lh3.googleusercontent.com/proxy/22TZ5SR1X79mJ7V-7heXfGqR1bktjpcRTf2ItS0T6QthZY_ZX92hbA3YutzQJTZpvwbY_HfSx0jhTEQFhdEGMIjGwqN10QyAQhL5xVpfUXDWopNn8CttMfA7r3GES7uKkRul3rMmt90Kl4aJelPN0MBuHeiY_L85jJfuyI25Z4w" alt=""
+                        src="https://www.multivu.com/players/English/8417251-fender-grace-vanderwaal-ukuleles/image/GraceVanderWaalSig_1538440567049-HR.jpg" alt=""
                         style={{maxWidth: '80%'}}
                         />
                         </div>
