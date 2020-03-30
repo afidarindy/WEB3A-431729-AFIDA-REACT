@@ -13,12 +13,10 @@ class LandingComponent extends Component{
                     <Row className="section-container">
                         <Col lg={12} md={12} sm={12}>
                         <br/><br/>
-                        <div>
                         <img
                         src="https://www.multivu.com/players/English/8417251-fender-grace-vanderwaal-ukuleles/image/GraceVanderWaalSig_1538440567049-HR.jpg" alt=""
                         style={{maxWidth: '80%'}}
                         />
-                        </div>
                         </Col>
                         <Col lg={10} md={10} sm={10}>
                             <Row>
